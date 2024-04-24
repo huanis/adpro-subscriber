@@ -7,3 +7,7 @@ Advanced Message Queuing Protocol is a protocol that allows end-to-end communica
 - guest (the second one): the password to connect to the queue
 - localhost: where the queue is deployed/running
 - 5672: the port used to connect to the queue in the localhost
+
+
+![rabbitmq](image-4.png)
+The image above shows when the rate of message sent by publisher is faster than the rate of messages acknowledged by the consumer.
