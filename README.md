@@ -11,3 +11,9 @@ Advanced Message Queuing Protocol is a protocol that allows end-to-end communica
 
 ![rabbitmq](image-4.png)
 The image above shows when the rate of message sent by publisher is faster than the rate of messages acknowledged by the consumer.
+
+![consoles](image.png)
+The image above shows that I am running 3 subscribers for 1 publisher. As you can see, one message only goes to one subscriber. The publisher published 5 messages in total. One of the subscriber got 3 of them, one got 2, and one got only 1.
+
+![last](image-1.png)
+The image above shows there are 13 messages in the queue in total. This is because although the subscribers are many, the rate in which they consume the messages are not enough to match the rate of messages sent by the publisher.
